@@ -1,0 +1,9 @@
+Cookie:admin
+Cookie:
+Cookie:admin
+Cookie:' union all select 1,2,3 #
+Cookie:' union all select 1,2,3 #
+Cookie:' union select 1,2,3 #
+Cookie:
+Cookie:admin
+Cookie:

